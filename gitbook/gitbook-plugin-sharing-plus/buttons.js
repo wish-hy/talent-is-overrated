@@ -3,7 +3,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         return {
             label: label,
             icon: 'fa fa-' + icon,
-            onClick: function (e) {
+            onClick: function(e) {
                 e.preventDefault();
                 window.open(link);
             }
@@ -27,10 +27,10 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         qzone: site('QQ空间', 'star', 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + url + '&title=' + title),
         stumbleupon: site('StumbleUpon', 'stumbleupon', 'http://www.stumbleupon.com/submit?url=' + url + '&title=' + title),
         twitter: site('Twitter', 'twitter', 'https://twitter.com/intent/tweet?url=' + title + '&text=' + title),
-        viber: site('Viber', 'volume-control-phone', 'viber://forward?text='+ url + ' ' + title),
+        viber: site('Viber', 'volume-control-phone', 'viber://forward?text=' + url + ' ' + title),
         vk: site('VK', 'vk', 'http://vkontakte.ru/share.php?url=' + url),
         weibo: site('新浪微博', 'weibo', 'http://service.weibo.com/share/share.php?content=utf-8&url=' + url + '&title=' + title),
-        whatsapp: site('WhatsApp', 'whatsapp', 'whatsapp://send?text='+ url + ' ' + title),
+        whatsapp: site('WhatsApp', 'whatsapp', 'whatsapp://send?text=' + url + ' ' + title),
     };
 
     gitbook.events.bind('start', function(e, config) {

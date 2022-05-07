@@ -31,7 +31,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
                 if (htmlStr.indexOf(key) > 0) {
                     // remove key from text
                     var style = styleMap[key];
-    
+
                     htmlStr = htmlStr.replace(key, style.htmlStr);
                     $(this).html(htmlStr);
 
